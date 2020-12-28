@@ -3,10 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
         xmlns:local="clr-namespace:es_corsa"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="772">
     <Grid>
-        
+        <Image x:Name="imgSfondo" HorizontalAlignment="Left" Height="414" VerticalAlignment="Top" Width="757" Source="corsa.png"/>
+        <Image HorizontalAlignment="Left" Height="111" Margin="83,10,0,0" VerticalAlignment="Top" Width="153" Source="shark.png"/>
+        <Image HorizontalAlignment="Left" Height="111" Margin="83,146,0,0" VerticalAlignment="Top" Width="153" Source="shark.png"/>
+        <Image HorizontalAlignment="Left" Height="111" Margin="83,287,0,0" VerticalAlignment="Top" Width="153" Source="shark.png"/>
+
     </Grid>
 </Window>
