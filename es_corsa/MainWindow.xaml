@@ -6,12 +6,13 @@
         WindowStartupLocation="CenterScreen"
         xmlns:local="clr-namespace:es_corsa"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="772">
+        Title="MainWindow" Height="582.6" Width="772" Background="Black">
     <Grid>
         <Image x:Name="imgSfondo" HorizontalAlignment="Left" Height="414" VerticalAlignment="Top" Width="757" Source="corsa.png"/>
         <Image x:Name="imgShark1" HorizontalAlignment="Left" Height="111" Margin="83,10,0,0" VerticalAlignment="Top" Width="153" Source="shark.png"/>
         <Image x:Name="imgShark2" HorizontalAlignment="Left" Height="111" Margin="83,146,0,0" VerticalAlignment="Top" Width="153" Source="shark.png"/>
         <Image x:Name="imgShark3" HorizontalAlignment="Left" Height="111" Margin="83,287,0,0" VerticalAlignment="Top" Width="153" Source="shark.png"/>
+        <Button x:Name="btnVia" Content="Parti" HorizontalAlignment="Left" Height="109" Margin="236,419,0,0" VerticalAlignment="Top" Width="306" Background="#FF00A2E8" FontFamily="Papyrus" FontSize="72" Click="btnVia_Click"/>
 
     </Grid>
 </Window>
