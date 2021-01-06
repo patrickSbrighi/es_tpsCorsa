@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace es_corsa
 {
-    public class Pair
+    public class Arrivo
     {
         public TimeSpan Tempo
         {
@@ -20,7 +20,7 @@ namespace es_corsa
             set;
         }
 
-        public Pair(TimeSpan tempo, int numero)
+        public Arrivo(TimeSpan tempo, int numero)
         {
             Tempo = tempo;
             Numero = numero;

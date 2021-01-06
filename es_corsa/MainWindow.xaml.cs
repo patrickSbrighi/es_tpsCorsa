@@ -31,7 +31,7 @@ namespace es_corsa
         int posizionePartenza1;
         int posizionePartenza2;
         int posizionePartenza3;
-        List<Pair> tempi;
+        List<Arrivo> tempi;
         Stopwatch cronometro1;
         Stopwatch cronometro2;
         Stopwatch cronometro3;
@@ -97,8 +97,8 @@ namespace es_corsa
 
         private void Stop(TimeSpan tempo, int numero)
         {
-            Pair p = new Pair(tempo, numero);
-            tempi.Add(p);
+            Arrivo a = new Arrivo(tempo, numero);
+            tempi.Add(a);
         }
 
         private void btnVia_Click(object sender, RoutedEventArgs e)
@@ -109,7 +109,7 @@ namespace es_corsa
 
         private void Inizio()
         {
-            tempi = new List<Pair>();
+            tempi = new List<Arrivo>();
             Thread t1 = new Thread(new ThreadStart(muoviSqualo1));
             Thread t2 = new Thread(new ThreadStart(muoviSqualo2));
             Thread t3 = new Thread(new ThreadStart(muoviSqualo3));
@@ -147,7 +147,7 @@ namespace es_corsa
         private void OrdinamentoSuTempo()
         {
             List<TimeSpan> ordine = new List<TimeSpan>();
-            foreach(Pair p in tempi)
+            foreach(Arrivo p in tempi)
             {
                 ordine.Add(p.Tempo);
             }
@@ -169,7 +169,7 @@ namespace es_corsa
                         }
                     }
 
-                    Pair aux;
+                    Arrivo aux;
                     aux = tempi[i];
                     tempi[i] = tempi[pos];
                     tempi[pos] = aux;
